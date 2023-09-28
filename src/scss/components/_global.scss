@@ -1,0 +1,25 @@
+html{
+    // overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+    height: 100%;
+
+}
+body{
+    font-family: 'Plus Jakarta Sans', "Open Sans", sans-serif;
+    position: relative;
+}
+main.main{
+    overflow: hidden;
+}
+.container{
+    max-width: 1295px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

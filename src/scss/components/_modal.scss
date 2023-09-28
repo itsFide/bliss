@@ -1,0 +1,137 @@
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+        .modal {
+            background: white;
+            padding: 25px;
+            border-radius: 5px;
+            height: 550px;
+            width: 960px;
+            overflow-y: auto;
+                &__title {
+                    text-align: center;
+                    margin-left: auto;
+                    color: var(--gray-900, #18181B);
+                    font-family: "Open Sans", "Plus Jakarta Sans";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 66px; /* 113.793% */
+                }
+                &__close{
+                    margin-left: auto;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                &__top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                &__body{
+                    & ul{
+                        & p{
+                            font-weight: 700;
+                            margin: 10px 0;
+                            display: inline-flex;
+                        }
+                        & li{
+                            list-style-type: none;
+                            padding-left: 15px;
+                            margin: 10px 0;
+                            color: $gray-600;
+                            /* Inter/Regular/16px */
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 26px; /* 162.5% */
+                        }
+                    }
+                    &__descr{
+                        margin-top: 25px;
+                        color: $gray-600;
+                        /* Inter/Regular/16px */
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 26px; /* 162.5% */
+                    }
+                    &__title{
+                        font-size: 'Open Sans';
+                        margin: 10px 0;
+                    }
+                    & .form{
+                        margin-top: 25px;
+                        &__item{
+                            margin-bottom: 15px;
+                            display: flex;
+                            flex-direction: column;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            & p{
+                                font-size: 18px;
+                                margin-bottom: 5px;
+                            }
+                            & input{
+                                border-radius: 3px;
+                                border: 1px solid #A1A1AA;
+                                background: #FAFAFA;
+                                padding: 20px;
+                                width: 100%;
+                            }
+                            & label{
+                                margin: 5px 0;
+                                & input{
+                                    width: auto;
+                                    margin-right: 15px;
+                                }
+                            }
+                            & textarea{
+                                width: 100%;
+                                resize: none;
+                            }
+                        }
+                        &__btn{
+                            display: flex;
+                            justify-content: center;
+                            & button{
+                                cursor: pointer;
+                                padding: 16px;
+                                border-radius: 10px;
+                                background: $gray;
+                                color: #fff;
+                                border: 1px solid transparent;
+                                /* PJ/Bold/18px */
+                                font-family: "Open Sans","Plus Jakarta Sans";
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                transition: all .3s;
+                                line-height: 24px; /* 133.333% */
+                                &:hover{
+                                    border: 1px solid $gray;
+                                    background-color: #fff;
+                                    color: $gray;
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+}
+

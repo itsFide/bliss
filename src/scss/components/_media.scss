@@ -1,0 +1,141 @@
+@media (max-width:1100px) {
+    .header{
+        &__info{
+            gap: 50px;
+        }
+    }
+    .hero{
+        position: relative;
+        &__img{
+            width: 50%;
+            order: 2;
+        }
+        &__text{
+            order: 1;
+        }
+        &__inner{
+            flex-direction: column;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+        &__seo{
+            text-align: center;
+        }
+        &__descr{
+            text-align: center;
+        }
+        &__btn{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .modal{
+        &__wrapper{
+            & .modal{
+                width: 95%
+            }
+            & .modal__title{
+                font-size: 18px;
+                line-height: 25px;
+            }
+            & .modal__top{
+                align-items: start;
+                gap: 10px;
+            }
+        }
+    }
+}
+@media (max-width:725px) {
+    .header{
+        &__info{
+            &__title{
+                font-size: 16px;
+            }
+        }
+    }
+    .hero{
+        &__title{
+            font-size: 42px;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width:530px){
+    .header{
+        &__info{
+            gap: 25px;
+            &__title{
+                font-size: 14px;
+            }
+        }
+    }
+    .hero{
+        &__title{
+            line-height: 45px;
+            font-size: 36px;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+    }
+    .modal{
+        &__wrapper{
+            & .modal{
+                width: 95%
+            }
+            & .modal__body{
+                & ul{
+                    & li{
+                        padding-left: 0;
+                    }
+                }
+                & .form{
+                    &__item{
+                        & p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:450px){
+    .header{
+        &__logo{
+            & img{
+                width: 50px;
+            }
+        }
+        &__info{
+            gap: 15px;
+            &__title{
+                font-size: 12px;
+            }
+            &__descr{
+                font-size: 10px;
+            }
+        }
+    }
+    .hero{
+        &__title{
+            font-size: 28px;
+        }
+        &__img{
+            width: 85%;
+        }
+        &__btn{
+            margin-top: 25px;
+            & button{
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}
